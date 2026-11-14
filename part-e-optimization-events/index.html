@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickCart - JavaScript Optimization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>QuickCart</h1>
+        <p>JavaScript Performance Optimization and DOM Events</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Debounce Search</h2>
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <p id="searchResult"></p>
+        </section>
+
+        <section>
+            <h2>2. Throttle Scroll Event</h2>
+            <p>Scroll down the page and check the browser console.</p>
+            <div class="scroll-space">
+                Scroll this page to test throttling.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Memoization</h2>
+            <button id="discountButton">Calculate Discount</button>
+            <p id="discountResult"></p>
+        </section>
+
+        <section>
+            <h2>4. Event Bubbling</h2>
+            <div id="bubblingContainer" class="product-container">
+                <div class="product">
+                    <span>Laptop</span>
+                    <button class="remove-btn">Remove</button>
+                </div>
+                <div class="product">
+                    <span>Mouse</span>
+                    <button class="remove-btn">Remove</button>
+                </div>
+                <div class="product">
+                    <span>Keyboard</span>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Stop Event Propagation</h2>
+            <div id="stopContainer" class="product-container">
+                <p>Click the button below.</p>
+                <button id="stopButton">Click Me</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Event Delegation</h2>
+            <div id="delegationContainer" class="product-container">
+                <div class="product-item">
+                    <span>Laptop</span>
+                    <button class="remove-btn">Remove</button>
+                </div>
+                <div class="product-item">
+                    <span>Mouse</span>
+                    <button class="remove-btn">Remove</button>
+                </div>
+                <div class="product-item">
+                    <span>Monitor</span>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
